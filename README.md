@@ -49,8 +49,8 @@ This project takes a bitmap image as input, processes its raw pixel data, and tr
 ## Usage
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ascii-art-generator.git
+   ```
+   gh repo clone pvsssss/ascii-art-generator
    cd ascii-art-generator
 2. Run the program:
 ```
