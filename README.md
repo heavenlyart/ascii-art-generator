@@ -41,7 +41,7 @@ This project takes a bitmap image as input, processes its raw pixel data, and tr
 
 ## Requirements
 
-- Ensure you have **Python 3.x** installed
+- Ensure you have **Python 3.10** installed
 - No external libraries or dependencies needed
 
 ---
