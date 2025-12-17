@@ -94,3 +94,6 @@ Feel free to reach out or connect with me:
 - Instagram: [@singh_pratakhveer](https://www.instagram.com/singh_pratakhveer)
 
 # Screenshots
+<img src="./samples/sample1 in ascii.jpeg" alt="Project Screenshot" >
+<img src="./samples/sample2 in ascii.jpeg" alt="Project Screenshot" >
+<img src="./samples/sample3 in ascii.jpeg" alt="Project Screenshot" >
