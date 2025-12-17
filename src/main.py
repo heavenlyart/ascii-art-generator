@@ -5,6 +5,13 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog
 
+
+SCALE = 2
+# NOTE : INCREASE THIS VALUE IF THE IMAGE APPEARS TO BE TOO BIG 
+# DO NOT ENTER DECIMALS
+# BIG NUMBER -> SMALLER IMAGE
+# SMALL NUMBER -> BIGGER IMAGE
+
 def select_file() -> str | None:
     """
     Creates a Tkinter window to select a bitmap image and then return
@@ -49,11 +56,7 @@ try:
     if parsed_img != []:
         
         # downsampling the image
-        # NOTE : ADD A POSITIVE INTEGER VALUE AFTER parsed_img TO CHANGE THE 
-        # SCALE OF THE IMAGE INCASE IT'S TOO BIG (DEFAULT IS 4)
-        # BIG NUMBER -> SMALLER IMAGE
-        # SMALL NUMBER -> BIGGER IMAGE
-        downsampled_img = resize_img(parsed_img)
+        downsampled_img = resize_img(parsed_img, SCALE)
 
         # turning the image to grayscale
         grayed_img = convert_to_grayscale(downsampled_img)
