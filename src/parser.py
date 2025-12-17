@@ -1,4 +1,4 @@
-def parseBMP(filePath: str) -> list:
+def parse_bmp(filePath: str) -> list[list[tuple]]:
     """
     Takes in the file path of the bitmap image and parses the header and
     pixel data, storing the RGB channels of each pixel in an array and
@@ -52,7 +52,7 @@ def parseBMP(filePath: str) -> list:
                         blue = ord(bmp.read(1))
                         green = ord(bmp.read(1))
                         red = ord(bmp.read(1))
-                        bmp.read(1) #skipping the alpha channel
+                        bmp.read(1) # skipping the alpha channel
                         row.append((red, green, blue))
                     else:
                         raise ValueError("Unsupported bit depth")
@@ -61,7 +61,15 @@ def parseBMP(filePath: str) -> list:
             
     except FileNotFoundError:
         print("Error : The file was not found at the specified location!")
+        
+    except TypeError:
+        print("File selection cancelled or File is not of type bmp")
     
+    pixel_data = pixel_data[::-1]
     return pixel_data
-    
-print(parseBMP("./random_image.bmp"))
+
+
+if __name__ == "__main__":
+    print("""This file only has utility functions for the main program and does \
+not have any functionallity on it's own.
+Please run main.py to execute the program""")
